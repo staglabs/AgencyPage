@@ -6,10 +6,20 @@ import CardSpotlight from "@/components/ui/card-spotlight";
 import TextReveal from "@/components/ui/text-reveal";
 
 const services = [
+    // {
+    //     title: "Brand Strategy",
+    //     description: "We define your brand's voice, visual identity, and market positioning to create a lasting impact.",
+    //     tags: ["Identity", "Positioning", "Voice"],
+    // },
     {
-        title: "Brand Strategy",
-        description: "We define your brand's voice, visual identity, and market positioning to create a lasting impact.",
-        tags: ["Identity", "Positioning", "Voice"],
+        title: "Web Development",
+        description: "Building robust, scalable, and high-performance websites using the latest technologies.",
+        tags: ["Next.js", "React", "WebGL"],
+    },
+    {
+        title: "Application Development",
+        description: "Building custom applications to meet your unique business needs.",
+        tags: ["Custom", "Applications", "Development"],
     },
     {
         title: "UI/UX Design",
@@ -17,14 +27,9 @@ const services = [
         tags: ["Web", "Mobile", "Design Systems"],
     },
     {
-        title: "Web Development",
-        description: "Building robust, scalable, and high-performance websites using the latest technologies.",
-        tags: ["Next.js", "React", "WebGL"],
-    },
-    {
-        title: "Motion Design",
-        description: "Adding life to your digital presence with fluid animations and micro-interactions.",
-        tags: ["2D/3D", "Interaction", "Video"],
+        title: "AI Solutions",
+        description: "Integrating AI into your workflows to enhance efficiency and automation.",
+        tags: ["AI", "Integration", "Automation"],
     },
 ];
 

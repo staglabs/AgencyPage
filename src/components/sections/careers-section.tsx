@@ -1,28 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const jobs = [
     {
-        title: "Senior Product Designer",
-        location: "Remote / NY",
-        type: "Full-time",
+        title: "Full Stack Developer",
+        location: "Remote",
+        type: "Flexible",
     },
     {
         title: "Frontend Developer (Creative)",
         location: "Remote",
-        type: "Full-time",
+        type: "Flexible",
     },
     {
-        title: "Project Manager",
-        location: "London",
-        type: "Contract",
+        title: "Backend Developer",
+        location: "Remote",
+        type: "Flexible",
     },
 ];
 
-export default function CareersSection() {
+export default function CareersSection({ id }: { id?: string }) {
     return (
-        <section className="min-h-screen w-full py-24 px-6 md:px-12 flex flex-col justify-center">
+        <section id={id} className="min-h-screen w-full py-24 px-6 md:px-12 flex flex-col justify-center">
             <div className="max-w-7xl mx-auto w-full">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -41,7 +42,7 @@ export default function CareersSection() {
 
                 <div className="max-w-4xl">
                     {jobs.map((job, i) => (
-                        <div key={i} className="border-t border-white/10 py-12 flex flex-col md:flex-row md:items-center justify-between group hover:bg-white/5 transition-colors px-4 -mx-4 cursor-pointer">
+                        <div key={i} className="border-t border-white/10 py-12 flex flex-col md:flex-row md:items-center justify-between group hover:bg-white/5 transition-colors px-4 -mx-4">
                             <div>
                                 <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-2">{job.title}</h3>
                                 <div className="flex gap-4 text-sm text-muted-foreground uppercase tracking-widest">
@@ -50,9 +51,12 @@ export default function CareersSection() {
                                     <span>{job.type}</span>
                                 </div>
                             </div>
-                            <div className="mt-6 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <Link
+                                href={`/careers?position=${encodeURIComponent(job.title)}`}
+                                className="mt-6 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer"
+                            >
                                 <span className="text-lg font-medium border-b border-white">Apply Now</span>
-                            </div>
+                            </Link>
                         </div>
                     ))}
                 </div>

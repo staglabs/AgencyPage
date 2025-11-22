@@ -4,30 +4,30 @@ import { motion } from "framer-motion";
 
 const updates = [
     {
-        date: "OCT 2023",
-        title: "StagLabs wins Agency of the Year",
-        category: "AWARDS",
+        date: "NOV 2025",
+        title: "Staglab reaches the most number of clients",
+        category: "CLIENTS",
     },
     {
-        date: "SEP 2023",
+        date: "OCT 2025",
         title: "Launching our new design system",
         category: "INTERNAL",
     },
     {
-        date: "AUG 2023",
-        title: "New partnership with TechGiant",
+        date: "AUG 2025",
+        title: "New partnership with Zeroone Agency",
         category: "BUSINESS",
     },
     {
-        date: "JUL 2023",
-        title: "Expanding to Tokyo",
+        date: "JUL 2025",
+        title: "Expanding to Bangalore",
         category: "GROWTH",
     },
 ];
 
-export default function UpdatesSection() {
+export default function UpdatesSection({ id }: { id?: string }) {
     return (
-        <section className="min-h-screen w-full py-24 px-6 md:px-12 flex flex-col justify-center">
+        <section id={id} className="min-h-screen w-full py-24 px-6 md:px-12 flex flex-col justify-center">
             <div className="max-w-7xl mx-auto w-full">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}

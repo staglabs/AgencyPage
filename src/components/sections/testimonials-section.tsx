@@ -5,18 +5,18 @@ import { motion } from "framer-motion";
 const testimonials = [
     {
         quote: "StagLabs transformed our digital presence. The attention to detail and design precision is unmatched.",
-        author: "Sarah Connor",
-        role: "CTO, Cyberdyne",
+        author: "Anmol Singh",
+        role: "Lead Developer, Cyberdyne",
     },
     {
         quote: "A true partner in innovation. They understood our vision and executed it with flawless technical expertise.",
-        author: "Eldon Tyrell",
-        role: "CEO, Tyrell Corp",
+        author: "Siddharth Sharma",
+        role: "Founder, Xpress Prints",
     },
     {
-        quote: "The best agency we've worked with. Minimalist, efficient, and incredibly talented team.",
-        author: "Niander Wallace",
-        role: "Founder, Wallace Corp",
+        quote: "The best we've worked with. Minimalist, efficient, and incredibly talented team.",
+        author: "Aniket Mishra",
+        role: "Founder, Repple Gym",
     },
 ];
 
