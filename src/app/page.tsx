@@ -85,9 +85,9 @@ export default function Home() {
         <ServicesSection />
       </SectionWrapper>
 
-      <SectionWrapper>
-        <WorkSection />
-      </SectionWrapper>
+      {/* <SectionWrapper>
+        <WorkSection id="work" />
+      </SectionWrapper> */}
 
       <SectionWrapper>
         <ProcessSection />
@@ -96,11 +96,11 @@ export default function Home() {
       <TestimonialsSection />
 
       <SectionWrapper>
-        <AboutSection />
+        <AboutSection id="about" />
       </SectionWrapper>
 
       <SectionWrapper>
-        <UpdatesSection />
+        <UpdatesSection id="updates" />
       </SectionWrapper>
 
       <SectionWrapper>
@@ -108,7 +108,7 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper>
-        <CareersSection />
+        <CareersSection id="careers" />
       </SectionWrapper>
 
       <CTASection />

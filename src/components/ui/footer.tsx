@@ -36,10 +36,10 @@ export default function Footer() {
                         <h3 className="text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">
                             Socials
                         </h3>
-                        <Link href="#" className="text-lg hover:text-muted-foreground transition-colors">Twitter</Link>
-                        <Link href="#" className="text-lg hover:text-muted-foreground transition-colors">Instagram</Link>
-                        <Link href="#" className="text-lg hover:text-muted-foreground transition-colors">LinkedIn</Link>
-                        <Link href="#" className="text-lg hover:text-muted-foreground transition-colors">GitHub</Link>
+                        <Link href="https://x.com/staglabz" className="text-lg hover:text-muted-foreground transition-colors">Twitter</Link>
+                        {/* <Link href="#" className="text-lg hover:text-muted-foreground transition-colors">Instagram</Link> */}
+                        {/* <Link href="#" className="text-lg hover:text-muted-foreground transition-colors">LinkedIn</Link> */}
+                        <Link href="https://github.com/staglabs" className="text-lg hover:text-muted-foreground transition-colors">GitHub</Link>
                     </div>
                 </div>
             </div>

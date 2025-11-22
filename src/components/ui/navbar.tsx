@@ -8,14 +8,25 @@ import Image from "next/image";
 import MagneticButton from "@/components/ui/magnetic-button";
 
 const navItems = [
-    { name: "Work", href: "/work" },
-    { name: "About", href: "/about" },
-    { name: "Updates", href: "/updates" },
-    { name: "Careers", href: "/careers" },
+    // { name: "Work", href: "/work", sectionId: "work" },
+    { name: "About", href: "/about", sectionId: "about" },
+    { name: "Updates", href: "/updates", sectionId: "updates" },
+    { name: "Careers", href: "/careers", sectionId: "careers" },
 ];
 
 export default function Navbar() {
     const pathname = usePathname();
+    const isHomePage = pathname === "/";
+
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, item: typeof navItems[0]) => {
+        if (isHomePage) {
+            e.preventDefault();
+            const element = document.getElementById(item.sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        }
+    };
 
     return (
         <motion.nav
@@ -41,6 +52,7 @@ export default function Navbar() {
                     <Link
                         key={item.name}
                         href={item.href}
+                        onClick={(e) => handleNavClick(e, item)}
                         className={cn(
                             "text-sm md:text-base font-medium tracking-tight hover:opacity-70 transition-opacity uppercase",
                             pathname === item.href ? "opacity-100" : "opacity-60"

@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 
-export default function AboutSection() {
+export default function AboutSection({ id }: { id?: string }) {
     return (
-        <section className="min-h-screen w-full py-24 px-6 md:px-12 flex flex-col justify-center">
+        <section id={id} className="min-h-screen w-full py-24 px-6 md:px-12 flex flex-col justify-center">
             <div className="max-w-7xl mx-auto w-full">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -31,23 +31,21 @@ export default function AboutSection() {
                         <div>
                             <h3 className="text-2xl font-bold uppercase tracking-widest mb-6">Services</h3>
                             <ul className="space-y-4 text-lg md:text-xl text-muted-foreground">
-                                <li className="border-b border-white/10 pb-2">Brand Strategy</li>
-                                <li className="border-b border-white/10 pb-2">UI/UX Design</li>
+                                {/* <li className="border-b border-white/10 pb-2">Brand Strategy</li> */}
                                 <li className="border-b border-white/10 pb-2">Web Development</li>
-                                <li className="border-b border-white/10 pb-2">Mobile Applications</li>
-                                <li className="border-b border-white/10 pb-2">Motion Design</li>
+                                <li className="border-b border-white/10 pb-2">Application Development</li>
+                                <li className="border-b border-white/10 pb-2">UI/UX Design</li>
+                                <li className="border-b border-white/10 pb-2">AI Solutions</li>
                             </ul>
                         </div>
 
                         <div>
                             <h3 className="text-2xl font-bold uppercase tracking-widest mb-6">Clients</h3>
                             <div className="grid grid-cols-2 gap-4 text-muted-foreground">
-                                <span>Acme Corp</span>
+                                <span>Xpress Prints</span>
                                 <span>Globex</span>
                                 <span>Soylent</span>
-                                <span>Umbrella</span>
                                 <span>Cyberdyne</span>
-                                <span>Massive Dynamic</span>
                             </div>
                         </div>
                     </div>

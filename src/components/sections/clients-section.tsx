@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const clients = [
-    "Acme Corp", "Globex", "Soylent", "Umbrella", "Cyberdyne", "Massive Dynamic", "Initech", "Hooli", "Veidt", "Tyrell"
+ "Globex", "Soylent", "Cyberdyne", "Initech", "Hooli", "Veidt", "Tyrell", "Xpress Prints"
 ];
 
 export default function ClientsSection() {
